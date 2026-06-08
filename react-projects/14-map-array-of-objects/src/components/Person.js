@@ -1,13 +1,12 @@
-export default function Person({ id, firstName, lastName, email, img }) {
+export default function Person({ firstName, lastName, email, img }) {
   return (
-    <div>
-      <h1>{id}</h1>
-      <h2>
+    <div className="card">
+      <img src={img} alt="img" />
+      <h3>
         {firstName}
         {lastName}
-      </h2>
-      <span>{email}</span>
-      <img src={img} alt="img" />
+      </h3>
+      <h4>{email}</h4>
     </div>
   );
 }
